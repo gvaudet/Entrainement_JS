@@ -17,7 +17,7 @@ console.log("Le nombre de liste contenant la classe compte moi est de : ", count
 // Question 6 
 const orderedList = document.querySelectorAll('ol > li.compte-moi'); 
 console.log("Le nombre de li avec la classe compte-moi dans un ol est de :", orderedList.length);
-// Question 7 
+// Question 7 A voir avec Chirs pour simplifier si possible 
 const div = document.querySelector('div');
 console.log(div);
 const secondList = div.querySelectorAll('ul'); 
