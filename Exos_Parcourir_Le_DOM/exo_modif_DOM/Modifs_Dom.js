@@ -71,4 +71,38 @@ function changeLogo() {
 
 changeLogo();
 
+// Modification 4 -------------------------------------------------------------------------------
+
+// Création de la variable avec le tableau des liens 
+let imagesArray = ["https://img.icons8.com/color/480/000000/html-5.png",
+                   "https://img.icons8.com/color/480/000000/css3.png", 
+                   "https://img.icons8.com/color/480/000000/javascript.png", 
+                   "https://img.icons8.com/color/480/000000/ruby-programming-language.png", 
+                   "https://img.icons8.com/color/480/000000/bootstrap.png", 
+                   "https://img.icons8.com/color/480/000000/github.png", 
+                   "https://i.imgur.com/bJE9Pka.png", 
+                   "https://avatars2.githubusercontent.com/u/25484553?s=200&v=4", 
+                   "https://img.icons8.com/color/480/000000/heroku.png"];
+
+
+
+// Selection des cards 
+let cards = document.querySelectorAll('div.card > img'); 
+
+// Faire vérifier par Chris mais ça fonctionne 
+for (let index = 0; index < imagesArray.length; index++) {
+    let element = imagesArray[index];
+    cards[index].setAttribute('src', element);
+}; 
+
+// Modification 5 -------------------------------------------------------------------------------
+
+let cardsArray = Array.prototype.slice.call(cards); 
+console.log(cardsArray);
+
+
+
+
+
+
 
